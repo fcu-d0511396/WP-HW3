@@ -8,12 +8,17 @@
     <title>攝氏溫度轉華氏溫度</title>
     <script type = "text/javascript">
       
-      var Fahrenheit;
-      var Celsius;
-      Celsius = window.prompt( "Enter the Celsius temperature" );
-      Fahrenheit = Celsius  * 9 / 5 + 32;
-      document.writeln( "<p>The Fahrenheit temperature is " + Fahrenheit +"℉</p>");
+      var fahrenheitTemperature;
+      var celsiusTemperature;
+      celsiusTemperature = window.prompt( "Enter the Celsius temperature" );
+      fahrenheitTemperature = temperatureTranslate(celsiusTemperature);
+      document.writeln( "<p>The Fahrenheit temperature is " + fahrenheitTemperature +"℉</p>");
       
+	  function temperatureTranslate(temperature)
+	  {
+	    return temperature * 9 / 5 + 32;
+	  }
+	  
     </script>
   </head><body></body>
 </html>
